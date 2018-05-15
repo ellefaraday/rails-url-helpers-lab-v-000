@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
     set_student
   end
 
-  def update
+  def edit
     set_student
   end
 
