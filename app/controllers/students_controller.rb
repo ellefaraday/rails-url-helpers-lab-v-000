@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
     set_student
   end
 
-  def edit
+  def activate_student
     set_student
   end
 
