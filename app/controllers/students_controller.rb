@@ -14,7 +14,6 @@ class StudentsController < ApplicationController
   end
 
   def update
-    raise params.inspect
     set_student
     if params[:active] == 'true'
       @student.update(active: true)
