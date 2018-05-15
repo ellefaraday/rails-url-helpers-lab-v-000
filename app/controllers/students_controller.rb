@@ -15,7 +15,6 @@ class StudentsController < ApplicationController
 
   def update
     set_student
-    binding.pry
     @student.update(active: params[:active])
     @student.save
   end
