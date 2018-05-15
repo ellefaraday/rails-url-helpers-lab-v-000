@@ -14,6 +14,7 @@ class StudentsController < ApplicationController
   end
 
   def update
+    set_student
     
   end
 
