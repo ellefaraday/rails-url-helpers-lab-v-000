@@ -16,7 +16,11 @@ class StudentsController < ApplicationController
   def update
     raise params.inspect
     set_student
-    @student.update(active: params[:active])
+    if params[:active] == 'true'
+      @student.update(active: true)
+    else
+      @student.update(active: false)
+    end
     @student.save
     redirect_to student_path(@student)
   end
