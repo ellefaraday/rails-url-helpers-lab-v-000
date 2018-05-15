@@ -14,10 +14,10 @@ class StudentsController < ApplicationController
   end
 
   def update
-    raise params.inspect
-    #set_student
-    #@student.update(active: params[:active])
-    #@student.save
+    set_student
+    @student.update(active: params[:active])
+    @student.save
+    redirect to 'student_path(@student)'
   end
 
   private
