@@ -1,5 +1,5 @@
 <h1><%= @student.to_s %></h1>
-<form action='<%=activate_student(@student)%>' action='PATCH'>
+<form action='<%=activate_student_url(@student)%>' action='PATCH'>
   <label>Active: </label><input type='radio' <%if @student.active%>checked<%end%> name='active' value ='active'>
   <br></br>
   <label>Inactive: </label><input type='radio' <%if !@student.active%>checked<%end%> name='active' value ='inactive'>
