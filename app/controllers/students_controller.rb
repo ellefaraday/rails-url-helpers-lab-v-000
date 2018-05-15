@@ -15,9 +15,9 @@ class StudentsController < ApplicationController
 
   def update
     raise params.inspect
-    set_student
-    @student.update(active: params[:active])
-    @student.save
+    #set_student
+    #@student.update(active: params[:active])
+    #@student.save
   end
 
   private
