@@ -12,6 +12,7 @@ class StudentsController < ApplicationController
   def edit
     set_student
     @student.active = !@student.active
+    redirect_to student_path(@student)
   end
 
   #def update
