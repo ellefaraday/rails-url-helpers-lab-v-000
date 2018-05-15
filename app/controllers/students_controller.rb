@@ -15,7 +15,7 @@ class StudentsController < ApplicationController
 
   def update
     set_student
-    
+    @student.active = params[:active]
   end
 
   private
