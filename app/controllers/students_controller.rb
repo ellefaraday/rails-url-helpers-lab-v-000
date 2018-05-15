@@ -13,6 +13,10 @@ class StudentsController < ApplicationController
     set_student
   end
 
+  def update
+    
+  end
+
   private
 
     def set_student
