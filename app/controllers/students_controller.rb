@@ -9,6 +9,9 @@ class StudentsController < ApplicationController
     set_student
   end
 
+  def edit
+  end
+
   private
 
     def set_student
