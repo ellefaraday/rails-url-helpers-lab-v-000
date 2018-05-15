@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
 
   def edit
     set_student
-
+    @student.active = !@student.active
   end
 
   #def update
