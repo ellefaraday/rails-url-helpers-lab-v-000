@@ -14,6 +14,7 @@ class StudentsController < ApplicationController
   end
 
   def update
+    raise params.inspect
     set_student
     @student.update(active: params[:active])
     @student.save
