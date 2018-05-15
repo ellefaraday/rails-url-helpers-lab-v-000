@@ -11,18 +11,19 @@ class StudentsController < ApplicationController
 
   def edit
     set_student
+
   end
 
-  def update
-    set_student
-    if params[:active] == 'true'
-      @student.update(active: true)
-    else
-      @student.update(active: false)
-    end
-    @student.save
-    redirect_to student_path(@student)
-  end
+  #def update
+  #  set_student
+  #  if params[:active] == 'true'
+  #    @student.update(active: true)
+  #  else
+  #    @student.update(active: false)
+  #  end
+  #  @student.save
+  #  redirect_to student_path(@student)
+#  end
 
   private
 
