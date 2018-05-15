@@ -2,4 +2,4 @@
 <form action='<%=edit_student_path(@student)%>' action='PATCH'>
   <label>Active: </label><input type='radio' <%if @student.active%>checked<%end%> name='active' value ='active'>
   <br></br>
-  <label>Active: </label><input type='radio' <%if @student.active%>checked<%end%> name='active' value ='inactive'>
+  <label>Inactive: </label><input type='radio' <%if @student.active%>checked<%end%> name='active' value ='inactive'>
